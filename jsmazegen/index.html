@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style type="text/css">
+            #output {
+                border: 1px solid #000;
+            }
+        </style>
+    </head>
+
+    <body onload="makeMaze()">
+        
+
+        <canvas id="stage" width=600 height=400></canvas>
+
+        <div id="input">
+            <div> 
+                cells X: <input id="cellsX" type="text" value="8" onchange="updateMaze()"/>
+            </div>  
+            <div> 
+                cells Y: <input id="cellsY" type="text" value="6" onchange="updateMaze()" />
+            </div>
+        </div>
+
+
+        <div id="output"></div>
+
+        <script src="bundle.js"></script>
+        <script type="text/javascript">
+
+            function updateMaze() {
+                makeMaze();
+            }
+        </script>
+
+
+    </body>
+
+</html>
